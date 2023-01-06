@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "pretest": "eslint lib/** static/lib/** server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-nodemon": "npx nodemon --signal SIGINT server.js --host localhost --port 8080",
     "start": "node server.js --host localhost --port 8080"
